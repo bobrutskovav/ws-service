@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:tns="http://WSCustomerBaseInfoInOutParms11.EQ.CS.ws.alfabank.ru"
+            xmlns:wsct="http://WSCommonTypes10.CS.ws.alfabank.ru"
+            targetNamespace="http://WSCustomerBaseInfoInOutParms11.EQ.CS.ws.alfabank.ru">
+    <xsd:import namespace="http://WSCommonTypes10.CS.ws.alfabank.ru" schemaLocation="WSCustomerBaseInfo11Service1.xsd"/>
+    <xsd:complexType name="WSCustomerBaseInfoGetInParms">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="cus" type="wsct:WSTypeChar6"/>
+            <xsd:element minOccurs="0" name="clc" type="wsct:WSTypeChar3"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="WSCustomerBaseInfoGetOutParms">
+        <xsd:sequence>
+            <xsd:element name="outCommonParms" type="wsct:WSCommonOutParms"/>
+            <xsd:element minOccurs="1" name="mainInfo" type="tns:WSCustomerBaseInfoGetOutMainInfoT"/>
+            <xsd:element minOccurs="1" name="additionalInfoGroup" type="wsct:WSTypeChar5"/>
+            <xsd:element minOccurs="0" name="additionalInfoClient"
+                         type="tns:WSCustomerBaseInfoGetOutAdditionalInfoClientT"/>
+            <xsd:element minOccurs="0" name="additionalInfoBank"
+                         type="tns:WSCustomerBaseInfoGetOutAdditionalInfoBankT"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="WSCustomerBaseInfoGetOutMainInfoT">
+        <xsd:sequence>
+            <xsd:element minOccurs="1" name="cus" type="wsct:WSTypeChar6"/>
+            <xsd:element minOccurs="1" name="clc" type="wsct:WSTypeChar3"/>
+            <xsd:element minOccurs="1" name="cun" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="cpnc" type="wsct:WSTypeChar6"/>
+            <xsd:element minOccurs="1" name="das" type="wsct:WSTypeChar15"/>
+            <xsd:element minOccurs="1" name="c1r" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="c2r" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="c3r" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="c4r" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="c5r" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="p1r" type="wsct:WSTypeChar3"/>
+            <xsd:element minOccurs="1" name="p2r" type="wsct:WSTypeChar3"/>
+            <xsd:element minOccurs="1" name="p3r" type="wsct:WSTypeChar3"/>
+            <xsd:element minOccurs="1" name="p4r" type="wsct:WSTypeChar3"/>
+            <xsd:element minOccurs="1" name="p5r" type="wsct:WSTypeChar3"/>
+            <xsd:element minOccurs="1" name="ctp" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="cub" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="cuc" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="cud" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="cuz" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="sac" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="aco" type="wsct:WSTypeChar3"/>
+            <xsd:element minOccurs="1" name="crf" type="wsct:WSTypeChar20"/>
+            <xsd:element minOccurs="1" name="lnm" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="ca2" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="cnap" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="cnar" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="cnal" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="cod" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="dcc" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="dlm" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="itrt" type="wsct:WSTypeDecimal117"/>
+            <xsd:element minOccurs="1" name="brnm" type="wsct:WSTypeChar4"/>
+            <xsd:element minOccurs="1" name="crb1" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="crb2" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="adj" type="wsct:WSTypeDecimal117"/>
+            <xsd:element minOccurs="1" name="ercp" type="wsct:WSTypeChar6"/>
+            <xsd:element minOccurs="1" name="ercc" type="wsct:WSTypeChar6"/>
+            <xsd:element minOccurs="1" name="drc" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="grps" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="cuna" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="dasa" type="wsct:WSTypeChar15"/>
+            <xsd:element minOccurs="1" name="cunm" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="cnai" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="grp" type="wsct:WSTypeChar6"/>
+            <xsd:element minOccurs="1" name="mtb" type="wsct:WSTypeChar4"/>
+            <xsd:element minOccurs="1" name="etx" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="yfon" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="dfrq" type="wsct:WSTypeDecimal30"/>
+            <xsd:element minOccurs="1" name="fon" type="wsct:WSTypeChar15"/>
+            <xsd:element minOccurs="1" name="fol" type="wsct:WSTypeChar10"/>
+            <xsd:element minOccurs="1" name="del" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="stmp" type="wsct:WSTypeChar16"/>
+            <xsd:element minOccurs="1" name="cref" type="wsct:WSTypeChar20"/>
+            <xsd:element minOccurs="1" name="oatp" type="wsct:WSTypeChar10"/>
+            <xsd:element minOccurs="1" name="occl" type="wsct:WSTypeChar3"/>
+            <xsd:element minOccurs="1" name="hdd" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="dded" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="rddh" type="wsct:WSTypeChar3"/>
+            <xsd:element minOccurs="1" name="ytri" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="yret" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="ypla" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="yopi" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="ynet" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="yri1" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="yri2" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="yri3" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="yri4" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="pcus" type="wsct:WSTypeChar6"/>
+            <xsd:element minOccurs="1" name="pclc" type="wsct:WSTypeChar3"/>
+            <xsd:element minOccurs="1" name="cs" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="cfrq" type="wsct:WSTypeChar3"/>
+            <xsd:element minOccurs="1" name="fcyc" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="cssa" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="pstm" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="nstm" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="stn" type="wsct:WSTypeDecimal70"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="WSCustomerBaseInfoGetOutAdditionalInfoClientT">
+        <xsd:sequence>
+            <xsd:element minOccurs="1" name="fnm1" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="fnm2" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="fnm3" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="bikr" type="wsct:WSTypeChar9"/>
+            <xsd:element minOccurs="1" name="bnkn" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="ca" type="wsct:WSTypeChar20"/>
+            <xsd:element minOccurs="1" name="shr" type="wsct:WSTypeChar20"/>
+            <xsd:element minOccurs="1" name="shv" type="wsct:WSTypeChar20"/>
+            <xsd:element minOccurs="1" name="shb" type="wsct:WSTypeChar20"/>
+            <xsd:element minOccurs="1" name="okhx" type="wsct:WSTypeChar5"/>
+            <xsd:element minOccurs="1" name="okto" type="wsct:WSTypeChar11"/>
+            <xsd:element minOccurs="1" name="okpo" type="wsct:WSTypeChar20"/>
+            <xsd:element minOccurs="1" name="okfs" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="okpf" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="okog" type="wsct:WSTypeChar5"/>
+            <xsd:element minOccurs="1" name="dlg1" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="fam1" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="nam1" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="par1" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="pho1" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="dlg2" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="fam2" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="nam2" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="par2" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="pho2" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="clco" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="dacc" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="daco" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="klba" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="perp" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="cred" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="kpp" type="wsct:WSTypeChar9"/>
+            <xsd:element minOccurs="1" name="gni" type="wsct:WSTypeChar3"/>
+            <xsd:element minOccurs="1" name="ggni" type="wsct:WSTypeChar30"/>
+            <xsd:element minOccurs="1" name="foms" type="wsct:WSTypeChar10"/>
+            <xsd:element minOccurs="1" name="npfn" type="wsct:WSTypeChar10"/>
+            <xsd:element minOccurs="1" name="dmgt" type="wsct:WSTypeChar4"/>
+            <xsd:element minOccurs="1" name="dtre" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="nreg" type="wsct:WSTypeChar20"/>
+            <xsd:element minOccurs="1" name="tnal" type="wsct:WSTypeChar4"/>
+            <xsd:element minOccurs="1" name="tnap" type="wsct:WSTypeChar4"/>
+            <xsd:element minOccurs="1" name="tnam" type="wsct:WSTypeChar4"/>
+            <xsd:element minOccurs="1" name="cnam" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="kotn" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="mail" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="namr" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="phor" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="bsp1" type="wsct:WSTypeChar5"/>
+            <xsd:element minOccurs="1" name="bsp2" type="wsct:WSTypeChar12"/>
+            <xsd:element minOccurs="1" name="dokn" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="parr" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="fio1" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="dtbl" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="user" type="wsct:WSTypeChar4"/>
+            <xsd:element minOccurs="1" name="cls" type="wsct:WSTypeChar3"/>
+            <xsd:element minOccurs="1" name="nalo" type="wsct:WSTypeChar20"/>
+            <xsd:element minOccurs="1" name="embo" type="wsct:WSTypeChar19"/>
+            <xsd:element minOccurs="1" name="crre" type="wsct:WSTypeChar4"/>
+            <xsd:element minOccurs="1" name="norg" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="kvdu" type="wsct:WSTypeChar3"/>
+            <xsd:element minOccurs="1" name="snom" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="orgd" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="dtvd" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="cln" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="dlgn" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="dkln" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="fior" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="blyn" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="okvd" type="wsct:WSTypeChar8"/>
+            <xsd:element minOccurs="1" name="eleb" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="tpcm" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="spco" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="dtcl" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="cnat" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="dtct" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="sale" type="wsct:WSTypeChar4"/>
+            <xsd:element minOccurs="1" name="dtbr" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="mtbr" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="opss" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="sogr" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="nogr" type="wsct:WSTypeChar9"/>
+            <xsd:element minOccurs="1" name="ukl1" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="ukl2" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="ukl3" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="ukl4" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="ukl5" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="dptp" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="dpsn" type="wsct:WSTypeChar20"/>
+            <xsd:element minOccurs="1" name="dpd1" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="dpd2" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="mcsn" type="wsct:WSTypeChar13"/>
+            <xsd:element minOccurs="1" name="mcd1" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="mcd2" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="kpps" type="wsct:WSTypeChar9"/>
+            <xsd:element minOccurs="1" name="kno" type="wsct:WSTypeChar4"/>
+            <xsd:element minOccurs="1" name="migr" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="vip" type="wsct:WSTypeChar1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="WSCustomerBaseInfoGetOutAdditionalInfoBankT">
+        <xsd:sequence>
+            <xsd:element minOccurs="1" name="fnm1" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="fnm2" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="fnm3" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="bik" type="wsct:WSTypeChar11"/>
+            <xsd:element minOccurs="1" name="ca" type="wsct:WSTypeChar20"/>
+            <xsd:element minOccurs="1" name="regn" type="wsct:WSTypeChar20"/>
+            <xsd:element minOccurs="1" name="rkc" type="wsct:WSTypeChar9"/>
+            <xsd:element minOccurs="1" name="bnst" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="stat" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="okto" type="wsct:WSTypeChar11"/>
+            <xsd:element minOccurs="1" name="okpo" type="wsct:WSTypeChar20"/>
+            <xsd:element minOccurs="1" name="okhx" type="wsct:WSTypeChar5"/>
+            <xsd:element minOccurs="1" name="okfs" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="okpf" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="okog" type="wsct:WSTypeChar5"/>
+            <xsd:element minOccurs="1" name="foms" type="wsct:WSTypeChar10"/>
+            <xsd:element minOccurs="1" name="npfn" type="wsct:WSTypeChar10"/>
+            <xsd:element minOccurs="1" name="chrg" type="wsct:WSTypeDecimal137"/>
+            <xsd:element minOccurs="1" name="kpp" type="wsct:WSTypeChar9"/>
+            <xsd:element minOccurs="1" name="gni" type="wsct:WSTypeChar3"/>
+            <xsd:element minOccurs="1" name="vali" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="drli" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="ruli" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="grli" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="elec" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="mail" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="dlg1" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="fam1" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="nam1" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="par1" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="pho1" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="dlg2" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="fam2" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="nam2" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="par2" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="pho2" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="regi" type="wsct:WSTypeChar20"/>
+            <xsd:element minOccurs="1" name="dmgt" type="wsct:WSTypeChar4"/>
+            <xsd:element minOccurs="1" name="tnal" type="wsct:WSTypeChar4"/>
+            <xsd:element minOccurs="1" name="tnap" type="wsct:WSTypeChar4"/>
+            <xsd:element minOccurs="1" name="tnam" type="wsct:WSTypeChar4"/>
+            <xsd:element minOccurs="1" name="dtli" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="cnam" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="nreg" type="wsct:WSTypeChar20"/>
+            <xsd:element minOccurs="1" name="dtre" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="dacc" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="daco" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="clco" type="wsct:WSTypeChar1"/>
+            <xsd:element minOccurs="1" name="ggni" type="wsct:WSTypeChar30"/>
+            <xsd:element minOccurs="1" name="nalo" type="wsct:WSTypeChar20"/>
+            <xsd:element minOccurs="1" name="dokn" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="okvd" type="wsct:WSTypeChar8"/>
+            <xsd:element minOccurs="1" name="nids" type="wsct:WSTypeChar15"/>
+            <xsd:element minOccurs="1" name="ncss" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="real" type="wsct:WSTypeChar4"/>
+            <xsd:element minOccurs="1" name="redc" type="wsct:WSTypeDate"/>
+            <xsd:element minOccurs="1" name="rwsd" type="wsct:WSTypeDecimal159"/>
+            <xsd:element minOccurs="1" name="ocsd" type="wsct:WSTypeChar35"/>
+            <xsd:element minOccurs="1" name="user" type="wsct:WSTypeChar4"/>
+            <xsd:element minOccurs="1" name="sogr" type="wsct:WSTypeChar2"/>
+            <xsd:element minOccurs="1" name="nogr" type="wsct:WSTypeChar9"/>
+            <xsd:element minOccurs="1" name="bsp1" type="wsct:WSTypeChar5"/>
+            <xsd:element minOccurs="1" name="bsp2" type="wsct:WSTypeChar12"/>
+            <xsd:element minOccurs="1" name="kno" type="wsct:WSTypeChar4"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
