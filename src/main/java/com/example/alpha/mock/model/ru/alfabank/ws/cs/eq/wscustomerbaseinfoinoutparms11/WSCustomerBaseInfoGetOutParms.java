@@ -8,11 +8,12 @@
 
 package com.example.alpha.mock.model.ru.alfabank.ws.cs.eq.wscustomerbaseinfoinoutparms11;
 
+import com.example.alpha.mock.model.ru.alfabank.ws.cs.wscommontypes10.WSCommonOutParms;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-import ru.alfabank.ws.cs.wscommontypes10.WSCommonOutParms;
 
 
 /**

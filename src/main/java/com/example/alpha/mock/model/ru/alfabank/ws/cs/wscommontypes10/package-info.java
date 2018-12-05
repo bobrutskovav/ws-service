@@ -6,4 +6,4 @@
 //
 
 @javax.xml.bind.annotation.XmlSchema(namespace = "http://WSCommonTypes10.CS.ws.alfabank.ru")
-package ru.alfabank.ws.cs.wscommontypes10;
+package com.example.alpha.mock.model.ru.alfabank.ws.cs.wscommontypes10;

@@ -34,7 +34,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "WSCustomerBaseInfoGetInParms", propOrder = {
+@XmlType(name = "InParms", propOrder = {
     "cus",
     "clc"
 })

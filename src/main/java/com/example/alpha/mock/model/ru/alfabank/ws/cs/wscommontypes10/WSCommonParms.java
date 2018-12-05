@@ -6,14 +6,14 @@
 //
 
 
-package ru.alfabank.ws.cs.wscommontypes10;
+package com.example.alpha.mock.model.ru.alfabank.ws.cs.wscommontypes10;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**

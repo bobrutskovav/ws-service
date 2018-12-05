@@ -40,8 +40,8 @@ public class ObjectFactory {
      * Create an instance of {@link WSTechnicalException }
      * 
      */
-    public ru.alfabank.ws.cs.wscommontypes10.WSTechnicalException createWSTechnicalException() {
-        return new ru.alfabank.ws.cs.wscommontypes10.WSTechnicalException();
+    public WSTechnicalException createWSTechnicalException() {
+        return new WSTechnicalException();
     }
 
     /**

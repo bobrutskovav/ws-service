@@ -6,7 +6,7 @@
 //
 
 
-package ru.alfabank.ws.cs.wscommontypes10;
+package com.example.alpha.mock.model.ru.alfabank.ws.cs.wscommontypes10;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
