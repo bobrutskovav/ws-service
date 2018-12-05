@@ -25,6 +25,7 @@ repositories {
 
 
 dependencies {
-	implementation('org.springframework.boot:spring-boot-starter-web')
-	testImplementation('org.springframework.boot:spring-boot-starter-test')
+	compile("org.springframework.boot:spring-boot-starter-web-services")
+	compile("wsdl4j:wsdl4j:1.6.1")
+	compile("org.glassfish.jaxb:jaxb-xjc:2.2.11")
 }

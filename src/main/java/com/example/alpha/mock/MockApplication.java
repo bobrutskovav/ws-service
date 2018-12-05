@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MockApplication {
 
     public static void main(String[] args) {
+        System.out.println("Mock Starting..");
         SpringApplication.run(MockApplication.class, args);
     }
 }

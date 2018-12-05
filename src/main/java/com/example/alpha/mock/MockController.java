@@ -1,24 +1,25 @@
 package com.example.alpha.mock;
 
 
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.ResponseStatus;
+import com.example.alpha.mock.model.ru.alfabank.ws.cs.eq.wscustomerbaseinfoinoutparms11.WSCustomerBaseInfoGetInParms;
+import org.springframework.ws.server.endpoint.annotation.Endpoint;
+import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
+import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 
-@Controller
+@Endpoint
 public class MockController {
+    private static final String NAMESPACE_URI = "http://WSCustomerBaseInfo11.EQ.CS.ws.alfabank.ru";
 
-    @RequestMapping(value = "/",
-            method = RequestMethod.POST,
-            consumes = MediaType.APPLICATION_XML_VALUE)
-    @ResponseStatus(HttpStatus.OK)
-    @ResponseBody
-    public Response mocked(Request request) {
+//    @RequestMapping(value = "/",
+//            method = RequestMethod.POST,
+//            consumes = MediaType.APPLICATION_XML_VALUE)
+//    @ResponseStatus(HttpStatus.OK)
+//    @ResponseBody
 
+    @PayloadRoot(namespace = NAMESPACE_URI,localPart = "WSCustomerBaseInfoGet")
+    public void mocked(@RequestPayload WSCustomerBaseInfoGetInParms request) {
+
+        System.out.println(request);
         //Todo generate response model, generate request model, make a replace value
 
     }
