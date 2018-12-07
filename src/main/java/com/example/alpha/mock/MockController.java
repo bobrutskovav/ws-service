@@ -10,15 +10,10 @@ import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 public class MockController {
     private static final String NAMESPACE_URI = "http://WSCustomerBaseInfo11.EQ.CS.ws.alfabank.ru";
 
-//    @RequestMapping(value = "/",
-//            method = RequestMethod.POST,
-//            consumes = MediaType.APPLICATION_XML_VALUE)
-//    @ResponseStatus(HttpStatus.OK)
-//    @ResponseBody
 
     @PayloadRoot(namespace = NAMESPACE_URI,localPart = "WSCustomerBaseInfoGet")
     public void mocked(@RequestPayload WSCustomerBaseInfoGetInParms request) {
-
+        //Проблема в том, что приходит реквест, но в нем везде null, хотя нет никаких эксепшенов или других видимых проблем, думаю что дело в построении неправильной модели, xjc строит две модели данных вместо одной(((
         System.out.println(request);
         //Todo generate response model, generate request model, make a replace value
 
